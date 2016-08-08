@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @@include('../tpl/header.tpl',{ "title":"中国移动经营分析系统" })
+    <link rel="stylesheet" type="text/css" href="assets/js/selectyze/selectyze.jquery.css">
+    <script src="assets/js/selectyze/selectyze.jquery.min.js"></script>
+</head>
+
+<body class="body-bg">
+    @@include('../tpl/top.tpl')
+    <!-- logo 开始 -->
+    <div class="logo-wrap">
+        <div class="logo-box">
+            <h1><a href="index.html" title="中国移动经营分析系统" class="logo-img"><span class="icons-logo"></span></a><span>中国移动经营分析系统</span></h1>
+        </div>
+    </div>
+    <!-- logo 结束 -->
+    <!--搜索开始 -->
+    <div class="search-box">
+        <div class="search-main">
+            <form id="search">
+                <div class="select-fixed">
+                    <select class="select-fixed-145px" id="index-select">
+                        <option value="menu">应用</option>
+                        <option value="topic">话题</option>
+                        <option value="callBoard">公告</option>
+                    </select>
+                </div>
+                <input class="search-input" onchange="change-input()"></input>
+                <button class="search-button"><span class="icons-Loupe icons-item"></span>搜索一下</button>
+            </form>
+        </div>
+    </div>
+    <!--搜索结束 -->
+    <!-- 主题内容 开始-->
+    <div class="container-main">
+        <div class="container-24 clearfix">
+            <!--左边栏  -->
+            <div class="grid-7 main-item">
+                <div class="container-wrap mb10">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-title-1 icons-item"></span>
+                            <span>应用中心</span>
+                        </div>
+                    </div>
+                    <div class="app-main-box">
+                        <ul class="app-list">
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-009 icon-item"></span>
+                                    <p class="app-name">公告</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-003 icon-item"></span>
+                                    <p class="app-name">经分提醒</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-001 icon-item"></span>
+                                    <p class="app-name">运营监控</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-009 icon-item"></span>
+                                    <p class="app-name">公告</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-003 icon-item"></span>
+                                    <p class="app-name">经分提醒</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-001 icon-item"></span>
+                                    <p class="app-name">运营监控</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-009 icon-item"></span>
+                                    <p class="app-name">公告</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-003 icon-item"></span>
+                                    <p class="app-name">经分提醒</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="msg-count">10</span>
+                                    <span class="icons-001 icon-item"></span>
+                                    <p class="app-name">运营监控</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="app-center.html">
+                                    <span class="icons-020 icon-item add"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="toggle-list">
+                            <span class="icons-arrow-show toggle-btn"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-wrap">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-title-2 icons-item"></span>
+                            <span>自取数据中心</span>
+                        </div>
+                    </div>
+                    <div class="app-main-box">
+                        <ul class="app-list data-center">
+                            <li>
+                                <a href="#">
+                                    <span class="icons-010 icon-item"></span>
+                                    <p class="app-name">数据集市</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icons-031 icon-item"></span>
+                                    <p class="app-name">标签库</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icons-010 icon-item"></span>
+                                    <p class="app-name">数据集市</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icons-031 icon-item"></span>
+                                    <p class="app-name">标签库</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icons-010 icon-item"></span>
+                                    <p class="app-name">数据集市</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icons-031 icon-item"></span>
+                                    <p class="app-name">标签库</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icons-012 icon-item add"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="toggle-list">
+                            <span class="icons-arrow-show toggle-btn"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边栏  -->
+            <div class="grid-17 main-item">
+                <div class="container-wrap">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-title-3 icons-item"></span>
+                            <span>收藏报表</span>
+                        </div>
+                        <div class="box-more">
+                            <a href="#" class="more">MORE+</a>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="table-main">
+                            <tbody>
+                                <tr>
+                                    <td width="75%"><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-wrap">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-title-4 icons-item"></span>
+                            <span>热门推送</span>
+                        </div>
+                        <div class="box-more">
+                            <a href="#" class="more">MORE+</a>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="table-main">
+                            <tbody>
+                                <tr>
+                                    <td width="45%"><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td>市场类</td>
+                                    <td><span class="icons-013 icon-item"></span>1646</td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td>市场类</td>
+                                    <td><span class="icons-013 icon-item"></span>1646</td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td>市场类</td>
+                                    <td><span class="icons-013 icon-item"></span>1646</td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td>市场类</td>
+                                    <td><span class="icons-013 icon-item"></span>1646</td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" target="_blank">4G网络使用用户的流量月报</a></td>
+                                    <td>市场类</td>
+                                    <td><span class="icons-013 icon-item"></span>1646</td>
+                                    <td class="fn-tar">2016/06/01 10:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主题内容 结束-->
+    @@include('../tpl/footer.tpl')
+    <!-- 我的收藏夹 -->
+    <div class="follow-box">
+        <div class="icons-follow follow-btn" title="我的收藏夹"></div>
+        <ul class="follow-list">
+            <li><a href="#" target="_blank">2014年集客A+客户合约捆绑日报</a></li>
+            <li><a href="#" target="_blank">2014年客户合约捆绑数月报</a></li>
+            <li><a href="#" target="_blank">客服中心重点业务数据办理量日报</a></li>
+            <li><a href="#" target="_blank">2014年属地运营收入年报</a></li>
+            <li><a href="#" target="_blank">2014年属地运营收入日报</a></li>
+            <li><a href="#" target="_blank">2014年客服中心虚拟运营收入月报</a></li>
+            <li><a href="#" target="_blank">2014年电商中心虚拟运营收入月报</a></li>
+            <li><a href="#" target="_blank">2014年一季度直供网店销售活跃度日报</a></li>
+            <li><a href="#" target="_blank">2014年有效新增放号日报</a></li>
+            <li><a href="#" target="_blank">2014年二季度有效新增2014年二季度有效新增放号月报2014年二季度有效新增放号月报放号月报</a></li>
+        </ul>
+    </div>
+    <!-- 我的收藏夹 -->
+    <script>
+    $(".app-list").each(function(index, el) {
+        $(this).find('li:gt(3):not(:last-child)').hide();
+    });
+
+    $(document).ready(function() {
+        /*selec美化*/
+        $('#index-select').Selectyze({
+            theme: 'skype'
+        });
+        $(".follow-box").hover(function() {
+            $(".follow-box").stop().animate({
+                "right": "0"
+            }, 100);
+        }, function() {
+            $(".follow-box").stop().animate({
+                "right": "-280px"
+            }, 100);
+        });
+
+
+        //点击切换模块隐藏
+        $(".toggle-list").on('click', function() {
+            var target = $(this).siblings('.app-list').find('li:gt(3):not(:last-child)');
+            if (target.is(':hidden')) {
+                target.show();
+                $(this).find('.toggle-btn').addClass('icons-arrow-hide').removeClass('icons-arrow-show');
+            } else {
+                target.hide();
+                $(this).find('.toggle-btn').addClass('icons-arrow-show').removeClass('icons-arrow-hide');
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

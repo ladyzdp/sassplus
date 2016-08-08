@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @@include('../tpl/header.tpl',{ "title":"应用中心" })
+    <link rel="stylesheet" type="text/css" href="assets/js/selectyze/selectyze.jquery.css">
+    <script src="assets/js/selectyze/selectyze.jquery.min.js"></script>
+</head>
+
+<body class="body-bg">
+    @@include('../tpl/top.tpl')
+    @@include('../tpl/search-box.tpl')
+   
+    <!-- 主题内容 开始-->
+    <div class="container-main">
+        <div class="container-24 clearfix">
+            <div class="container-wrap grid-24">
+                <div class="pub-box-title">
+                    <div class="box-title">
+                        <span class="icons-person icons-item"></span>
+                        <span>我的常用工具</span>
+                    </div>
+                    <div class="box-more">
+                        <!-- <a href="javascript:;" class="save-btn" id="edit-btn">编辑</a> -->
+                        <a href="javascript:;" class="save-btn" id="save-btn">保存</a>
+                    </div>
+                </div>
+                <div class="app-main-box">
+                    <ul class="app-list append-box" id="append">
+                        <li>
+                            <a href="javascript:;" title="公告" data-id="010">
+                                <span class="icons-021-new icon-item"></span>
+                                <p class="app-name">公告</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-24 clearfix">
+            <!--左边栏  -->
+            <div class="grid-8 main-item">
+                <div class="container-wrap mb10">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-016 icons-item"></span>
+                            <span>热门工具排行榜</span>
+                        </div>
+                    </div>
+                    <div class="list-wrap">
+                        <form id="my-tools">
+                            <input type="hidden" name="tools" value="">
+                            <ul class="list-box" id="all-item">
+                                <li>
+                                    <span class="rank-num one">1</span>
+                                    <span class="rank-name">咨询报障</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="01"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num two">2</span>
+                                    <span class="rank-name">经分问答</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="02"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num three">3</span>
+                                    <span class="rank-name">业务交流</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="03"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num four">4</span>
+                                    <span class="rank-name">财务收入预估</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="05"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num five">5</span>
+                                    <span class="rank-name">运营收入分解</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="06"></span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--右边栏  -->
+            <div class="grid-16 main-item">
+                <div class="container-wrap">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-title-6 icons-item"></span>
+                            <span>全部常用工具</span>
+                        </div>
+                        <div class="box-more">
+                            <a href="#" class="more">MORE+</a>
+                        </div>
+                    </div>
+                    <div class="app-main-box">
+                        <ul class="app-list data-center h200" id="all-app">
+                            <li>
+                                <a href="javascript:;" title="咨询报障" data-id="01">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-024 icon-item"></span>
+                                    <p class="app-name">咨询报障</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="经分问答" data-id="02">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-025 icon-item"></span>
+                                    <p class="app-name">经分问答</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="业务交流" data-id="03">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-026 icon-item"></span>
+                                    <p class="app-name">业务交流</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="基站导入" data-id="04">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-027 icon-item"></span>
+                                    <p class="app-name">基站导入</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="财务收入预估" data-id="05">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-028 icon-item"></span>
+                                    <p class="app-name">财务收入预估</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="运营收入分解" data-id="06">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-017 icon-item"></span>
+                                    <p class="app-name">运营收入分解</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="财务日收入预估" data-id="07">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-018 icon-item"></span>
+                                    <p class="app-name">财务日收入预估</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主题内容 结束-->
+    @@include('../tpl/footer.tpl')
+    <script type="text/javascript" src="assets/js/app-center.js"></script>
+</body>
+
+</html>

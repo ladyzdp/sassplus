@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* functions */
+
+.fn {
+    @at-root {
+        #{&}-lt {
+            float: left;
+        }
+        #{&}-rt {
+            float: right;
+        }
+        #{&}-tac {
+            text-align: center;
+        }
+        #{&}-tar {
+            text-align: right;
+        }
+        #{&}-tal {
+            text-align: left;
+        }
+        #{&}-db {
+            display: black;
+        }
+        #{&}-dn {
+            display: inline-block;
+        }
+        #{&}-psr {
+            position: relative;
+        }
+        #{&}-psa {
+            position: absolute;
+        }
+      
+    }
+}
+
+
+
+.bg-color {
+    background-color: #f1f1f1;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.pd10 {
+    padding: 0.4rem;
+}
+
+.pdl20 {
+    padding-left: 0.533333rem;
+}
+
+@mixin font-dpr($font-size) {
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+%fz14 {
+    @include font-dpr(14px);
+}
+
+%fz12 {
+    @include font-dpr(12px);
+}
+
+%fz16 {
+    @include font-dpr(16px);
+}
+
+%fz18 {
+    @include font-dpr(18px);
+}
+
+%fz20 {
+    @include font-dpr(20px);
+}
+
+%fz22 {
+    @include font-dpr(22px);
+}
+
+%fz24 {
+    @include font-dpr(24px);
+}
+
+// body {
+//     @include font-dpr(12px);
+// }
+
+%two-line {
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    font-size: inherit;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}

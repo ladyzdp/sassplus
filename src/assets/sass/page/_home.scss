@@ -1,0 +1,299 @@
+.body-bg {
+    background-color: #f1f1f1;
+}
+
+.container-main {
+    width: 100%;
+    padding: 30px 0;
+    min-height: 600px;
+}
+
+.container-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: solid #d2d2d2 1px;
+    &.mb10 {
+        margin-bottom: 10px;
+    }
+}
+
+.app-main-box {
+    width: 100%;
+    background-color: #fff;
+    @extend .clearfix;
+}
+
+.app-list {
+    width: 100%;
+    padding: 10px 0;
+    @extend .clearfix;
+    &.h200 {
+        height: 200px;
+        overflow: hidden;
+    }
+    &.data-center {
+        li {
+            a {
+                color: #95bccb;
+                border: solid #b7d1dd 1px;
+            }
+        }
+    }
+    &.all-app {
+        li {
+            padding: 9px 0;
+            padding-left: 17px;
+        }
+    }
+    &.append-box {
+        li {
+            padding: 11px 0;
+            padding-left: 22px;
+            a {
+                width: 110px;
+                height: 110px;
+                padding-top: 35px;
+                .icon-item {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    li {
+        padding: 7px 0;
+        padding-left: 14px;
+        float: left;
+        a {
+            position: relative;
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 12px;
+            width: 70px;
+            height: 70px;
+            color: #88b924;
+            border: solid #c0e17c 1px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            padding-top: 16px;
+            transition: all .25s ease-out;
+            &:hover {
+                background-color: #f1f1f1;
+            }
+            .msg-count {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                width: 18px;
+                height: 18px;
+                line-height: 1.5;
+                background-color: #f64480;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 18px;
+            }
+            .add-btn {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                background-color: #fff;
+                border-radius: 20px;
+            }
+            .icon-item {
+                margin-bottom: 5px;
+                &.add {
+                    margin-top: 8px;
+                }
+            }
+            .app-name {
+                width: 100%;
+                padding: 0 5px;
+                line-height: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.pub-box-title {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid #d2d2d2 1px;
+    height: 40px;
+    line-height: 40px;
+    color: #7d7d7d;
+    padding: 0 20px;
+    .icons-item {
+        margin-right: 8px;
+    }
+}
+
+.box-title {
+    float: left;
+    font-size: 16px;
+}
+
+.box-more {
+    float: right;
+    text-align: right;
+    .more {
+        font-size: 12px;
+        color: #0086d0;
+        &:hover {
+            color: #41a5dc;
+        }
+    }
+    .save-btn {
+        color: #fff;
+        background-color: #88b924;
+        line-height: 100%;
+        padding: 2px 14px;
+        &:hover {
+            background-color: #c0e17c;
+        }
+    }
+}
+
+.table-wrap {
+    width: 100%;
+}
+
+.table-main {
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+        color: #686863;
+        border-bottom: solid #ddd 1px;
+        transition: all .25s ease-out;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover {
+            background-color: #f9f9f9;
+        }
+        td {
+            padding: 10px 15px;
+            font-size: 14px;
+            
+            .icon-item {
+                margin-right: 5px;
+            }
+            &:last-child {
+                padding-right: 20px;
+            }
+            a {
+                color: #686863;
+                line-height: 1.5;
+                &:hover {
+                    color: #95bccb;
+                }
+            }
+        }
+    }
+}
+
+.follow-box {
+    position: fixed;
+    width: 308px;
+    right: -280px;
+    top:30%;
+}
+
+.follow-btn {
+    cursor: pointer;
+    float: left;
+    display: block;
+}
+
+.follow-list {
+    float: left;
+    width: 280px;
+    border: 1px solid #f2ddab;
+    background: #f2f2dc;
+    li {
+        line-height: 1.5;
+        text-indent: 1em;
+        a {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            padding: 5px 0;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            
+            &:hover {
+                background: #c6d1d6;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.list-wrap {
+    width: 100%;
+}
+
+.list-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    li {
+        width: 100%;
+        padding: 0 5px;
+        height: 40px;
+        position: relative;
+        line-height: 40px;
+        color: #333;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+        border-bottom: solid #d2d2d2 1px;
+        &:hover {
+            background-color: #f5f5f5;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        .hot-add-btn {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
+        .rank-name {
+            padding: 0 15px;
+        }
+        .rank-num {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            color: #fff;
+            border-radius: 4px;
+            // margin-right: 20px;
+            &.one {
+                background-color: #e58c72;
+            }
+            &.two {
+                background-color: #e6c057;
+            }
+            &.three {
+                background-color: #bad18c;
+            }
+            &.four {
+                background-color: #8fb8ca;
+            }
+            &.five {
+                background-color: #dcdcdc;
+            }
+        }
+    }
+}

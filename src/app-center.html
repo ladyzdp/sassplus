@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>应用中心</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets/js/selectyze/selectyze.jquery.css">
+    <script src="assets/js/selectyze/selectyze.jquery.min.js"></script>
+</head>
+
+<body class="body-bg">
+    <!-- 顶部开始 -->
+<div class="top">
+	<div class="top-list">
+		<ul class="top-menu">
+			<li>您好！陈雨</li>
+			<li><span class="icons-Watched-user icon-item"></span><span>(当前在线人数) 56</span></li>
+			<li>
+			<a href="javascript:;" class="skin">
+			<span class="icons-T-Shirt icon-item"></span>换肤
+				<ul id="skin">
+					<li class="skin-color orange" title="orange"></li>
+					<li class="skin-color black" title="black"></li>
+					<li class="skin-color green" title="green"></li>
+				</ul>
+			</a>
+			</li>
+			<li><a href="index.html"><span class="icons-fanhui icon-item"></span>主页</a></li>
+			<li><a href="#">返回旧版</a></li>
+			<li><a href="#"><span class="icons-Folder icon-item"></span>个人文件夹</a></li>
+			<li><a href="#"><span class="icons-wenhao icon-item"></span>帮助</a></li>
+			<li><a href="javascript:;" id="exit"><span class="icons-Power icon-item"></span>退出</a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$(".skin").hover(function() {
+			$("#skin").slideDown(100);
+			/* Stuff to do when the mouse enters the element */
+		}, function() {
+			/* Stuff to do when the mouse leaves the element */
+			$("#skin").slideUp(100);
+		});
+	});
+</script>
+<!-- 顶部结束 -->
+     <!--搜索开始 -->
+    <div class="top-container">
+        <div class="container-24">
+            <div class="grid-9">
+                <div class="logo-box inner">
+                    <h1><a href="index.html" title="中国移动经营分析系统" class="logo-img"><span class="icons-logo-inner"></span></a><span>中国移动经营分析系统</span></h1>
+                </div>
+            </div>
+            <div class="grid-15">
+                <form id="select">
+                    <div class="select-inner">
+                        <div class="select-fixed-inner">
+                            <select class="select-fixed-145px-inner">
+                                <option value="menu">应用</option>
+                                <option value="topic">话题</option>
+                                <option value="callBoard">公告</option>
+                            </select>
+                        </div>
+                        <input class="search-input-inner" id="searcg-value"></input>
+                        <button class="search-button-inner" id="search-btb"><span class="icons-Loupe2 icons-item"></span>搜索一下</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <script>
+    $(document).ready(function() {
+        /*selec美化*/
+        $('.select-fixed-145px-inner').Selectyze({
+            theme: 'skype'
+        });
+    });
+    </script>
+    <!--搜索结束 -->
+   
+    <!-- 主题内容 开始-->
+    <div class="container-main">
+        <div class="container-24 clearfix">
+            <div class="container-wrap grid-24">
+                <div class="pub-box-title">
+                    <div class="box-title">
+                        <span class="icons-person icons-item"></span>
+                        <span>我的常用工具</span>
+                    </div>
+                    <div class="box-more">
+                        <!-- <a href="javascript:;" class="save-btn" id="edit-btn">编辑</a> -->
+                        <a href="javascript:;" class="save-btn" id="save-btn">保存</a>
+                    </div>
+                </div>
+                <div class="app-main-box">
+                    <ul class="app-list append-box" id="append">
+                        <li>
+                            <a href="javascript:;" title="公告" data-id="010">
+                                <span class="icons-021-new icon-item"></span>
+                                <p class="app-name">公告</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-24 clearfix">
+            <!--左边栏  -->
+            <div class="grid-8 main-item">
+                <div class="container-wrap mb10">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-016 icons-item"></span>
+                            <span>热门工具排行榜</span>
+                        </div>
+                    </div>
+                    <div class="list-wrap">
+                        <form id="my-tools">
+                            <input type="hidden" name="tools" value="">
+                            <ul class="list-box" id="all-item">
+                                <li>
+                                    <span class="rank-num one">1</span>
+                                    <span class="rank-name">咨询报障</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="01"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num two">2</span>
+                                    <span class="rank-name">经分问答</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="02"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num three">3</span>
+                                    <span class="rank-name">业务交流</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="03"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num four">4</span>
+                                    <span class="rank-name">财务收入预估</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="05"></span>
+                                </li>
+                                <li>
+                                    <span class="rank-num five">5</span>
+                                    <span class="rank-name">运营收入分解</span>
+                                    <span>使用次数: 1234412</span>
+                                    <span class="icons-icon-jia hot-add-btn" data-id="06"></span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--右边栏  -->
+            <div class="grid-16 main-item">
+                <div class="container-wrap">
+                    <div class="pub-box-title">
+                        <div class="box-title">
+                            <span class="icons-title-6 icons-item"></span>
+                            <span>全部常用工具</span>
+                        </div>
+                        <div class="box-more">
+                            <a href="#" class="more">MORE+</a>
+                        </div>
+                    </div>
+                    <div class="app-main-box">
+                        <ul class="app-list data-center h200" id="all-app">
+                            <li>
+                                <a href="javascript:;" title="咨询报障" data-id="01">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-024 icon-item"></span>
+                                    <p class="app-name">咨询报障</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="经分问答" data-id="02">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-025 icon-item"></span>
+                                    <p class="app-name">经分问答</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="业务交流" data-id="03">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-026 icon-item"></span>
+                                    <p class="app-name">业务交流</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="基站导入" data-id="04">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-027 icon-item"></span>
+                                    <p class="app-name">基站导入</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="财务收入预估" data-id="05">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-028 icon-item"></span>
+                                    <p class="app-name">财务收入预估</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="运营收入分解" data-id="06">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-017 icon-item"></span>
+                                    <p class="app-name">运营收入分解</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="财务日收入预估" data-id="07">
+                                    <span class="icons-message-jia add-btn"></span>
+                                    <span class="icons-018 icon-item"></span>
+                                    <p class="app-name">财务日收入预估</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主题内容 结束-->
+       <!-- footer 开始 -->
+    <div class="footer">
+        <div class="footer-wrap">
+            <p>投诉保障值班电话：82580</p>
+            <p>版权所有©2000-2011 中国移动上海公司</p>
+        </div>
+    </div>
+    <!-- footer 结束 -->
+    <script type="text/javascript" src="assets/js/app-center.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+/.gulp/
+/node_modules/
+/WEB-INF/
+/npm-debug.log/
+.sublime-gulp.cache

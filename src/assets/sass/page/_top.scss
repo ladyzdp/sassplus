@@ -1,0 +1,114 @@
+.top {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 20px;
+    background-color: #f1f1f1;
+}
+
+.top-list {
+    width: 100%;
+    @extend .clearfix;
+}
+
+.top-menu {
+    float: right;
+    font-size: 12px;
+    li {
+        margin: 0 5px;
+        display: inline-block;
+        color: #707078;
+        .icon-item {
+            margin-right: 5px;
+        }
+        a {
+            display: inline-block;
+            padding: 0 5px;
+            color: #707078;
+            &:hover {
+                color: #0086d0;
+            }
+            &.skin {
+                position: relative;
+            }
+        }
+    }
+}
+
+#skin {
+    position: absolute;
+    width: 60px;
+    top: 100%;
+    left: calc(50% - 30px);
+    line-height: 100%;
+    border: solid #eee 1px;
+    background-color: #fff;
+    padding: 3px 6px;
+    display: none;
+    z-index: 10;
+    .skin-color {
+        height: 20px;
+        width: 100%;
+        margin: 3px 0;
+        transition: all .25s ease-out;
+        &:hover {
+            opacity: .8;
+        }
+        &.orange {
+            background-color: #FB7A5E;
+        }
+        &.black {
+            background-color: #757575;
+        }
+        &.green {
+            background-color: #9FD236;
+        }
+    }
+}
+
+.logo-wrap {
+    width: 100%;
+    height: 105px;
+    line-height: 105px;
+    background-color: #fff;
+}
+
+.logo-box {
+    width: 100%;
+    text-align: center;
+    &.inner {
+        text-align: left;
+        margin-top: 30px;
+        h1 {
+            font-size: 16px;
+        }
+    }
+    h1 {
+        font-size: 20px;
+        color: #707078;
+        font-weight: normal;
+        margin: 0;
+    }
+    .logo-img {
+        padding: 10px 20px 10px 0;
+        border-right: 1px solid #eee;
+        margin-right: 20px;
+    }
+}
+
+.top-container {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #eee;
+}
+
+.toggle-list {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    &:hover {
+        background-color: #f9f9f9;
+    }
+}

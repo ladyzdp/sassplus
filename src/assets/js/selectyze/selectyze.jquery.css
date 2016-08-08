@@ -1,0 +1,109 @@
+ul li{ list-style:none;}
+body,button,input,select,textarea,option,a{
+  font:"微软雅黑",tahoma,arial;
+}
+/*查询列表两列样式*/
+.DivSelectyze {
+	position:relative;
+	border:1px solid #dcdcdc;
+	width:105px;
+  *height: 24px;
+}
+.DivSelectyze .selectyzeValue {
+	position:relative;
+	display:block;
+	text-decoration:none;
+	z-index:-999;
+}
+.DivSelectyze ul {list-style:none;}
+.DivSelectyze .UlSelectize {
+	position:absolute;
+	z-index: 33;
+	display:none;
+	left:0px;
+}
+
+.DivSelectyze li a {
+	display:block;
+	text-decoration:none;
+}
+.optgroupTitle {
+	display:block;
+}
+.skype .selectyzeValue {
+	height:20px;
+	width:105px;
+	line-height:20px;
+	text-indent:.5em;
+	background:url(images/select-arrow-on.png) right center no-repeat #fff;
+	color:#525250;
+}
+.skype .UlSelectize {
+	width:105px;
+  margin-left: -1px;
+	border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+}
+.skype li a{
+	height:18px;
+	width:105px;
+	line-height:18px;
+	background:#fff;
+	color:#525250;
+	text-indent:.5em;
+	border-left:1px solid #dcdcdc;
+	border-right:1px solid #dcdcdc;
+}
+.skype li a:hover{
+	color:#525250;
+	background-color:#e7e6e4;
+}
+
+
+.DivSelectyze {
+    border:none;
+}
+.skype .selectyzeValue {
+    height:40px;
+    line-height:40px;
+    text-align: left;
+    border-right: 1px solid #aaaaaa;
+    *height: 40px;
+    *line-height: 40px;
+    *margin-top: -1px;
+}
+.skype .UlSelectize {
+
+    position: absolute;
+    z-index: 9999999999999;
+    border-top:1px solid rgb(210,210,210);
+    border-bottom:1px solid rgb(210,210,210);
+}
+.skype li{width:100%;padding:0; height: auto;}
+.skype li a{
+    height:30px;
+    width:105px;
+    text-align: left;
+    font-size: 12px;
+    line-height:30px;
+    border-left:1px solid rgb(210,210,210);
+    border-right:1px solid rgb(210,210,210);
+}
+
+.select-fixed-inner .selectyzeValue {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 12px;
+    border: 1px solid #d2d2d2;
+    /* border-right: 1px solid #aaaaaa; */
+    *height: 30px;
+    *line-height: 30px;
+    *margin-top: -1px;
+}
+
+
+
+
+
+
